@@ -1,10 +1,15 @@
 import * as data from "../fixtures/data.json";
+
 class homePagepo {
   selector = {
     pieChart_firstHalf:
       ".highcharts-label.highcharts-data-label.highcharts-data-label-color-1 > text > tspan",
     pieChart_restHalf:
       ".highcharts-label.highcharts-data-label.highcharts-data-label-color-0 > text > tspan",
+    slider_amount: "#loanamountslider > span",
+    slider_rate: "#loaninterestslider > span",
+    slider_tenure: "#loantermslider > span",
+    individual_bars: "g.highcharts-series-0 rect.highcharts-point",
   };
 
   input_loanAmount() {
@@ -39,60 +44,32 @@ class homePagepo {
     return cy.contains(data.personalLoanAmount);
   }
 
-  button_submit() {
-    return cy.get("#user_form_submit");
+  tab_personalLoan() {
+    return cy.get("#personal-loan > a");
   }
 
-  input_firstName() {
-    return cy.get("#user_first_name");
+  window_calendar(month) {
+    return cy.get(".month").eq(month);
   }
 
-  input_lastName() {
-    return cy.get("#user_last_name");
+  barChart() {
+    return cy.get(".highcharts-plot-background");
   }
 
-  input_email() {
-    return cy.get("#user_email");
+  group_barChart() {
+    return cy.get("g.highcharts-series-group");
   }
 
-  input_phone() {
-    return cy.get("#user_phone");
+  tooltip_bar(num) {
+    return cy
+      .get(
+        "g.highcharts-series-group g.highcharts-series-0 rect.highcharts-point"
+      )
+      .eq(num);
   }
 
-  input_password() {
-    return cy.get("#user_password");
-  }
-
-  dropdown_state() {
-    return cy.select("#user_state");
-  }
-
-  input_zipcode() {
-    return cy.get("#user_zipcode");
-  }
-
-  button_upload() {
-    return cy.get(".upload");
-  }
-
-  checkbox_agreement() {
-    return cy.get("#user_email_optin");
-  }
-
-  icon_asterick(locator) {
-    return cy.get(locator);
-  }
-
-  dropdown_occupation() {
-    return cy.get("#user_occupation");
-  }
-
-  dropdown_speciality() {
-    return cy.get("#user_specialty");
-  }
-
-  dropdown_state() {
-    return cy.get("#user_state");
+  label_tooltip() {
+    return cy.get(".highcharts-tooltip tspan");
   }
 }
 export default new homePagepo();

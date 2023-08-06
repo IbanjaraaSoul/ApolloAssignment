@@ -29,6 +29,15 @@ class utilFuncs {
       .trigger("mousemove", { pageX: positionInPixels }) // Move the handle to the desired position
       .trigger("mouseup"); // Stop dragging by triggering 'mouseup' event
   }
+
+  getApiCall(passUrl, passHeader) {
+    // using cy.api which is plugin for api call
+    return cy.api({
+      method: "GET",
+      url: passUrl,
+      headers: passHeader,
+    });
+  }
 }
 
 export default new utilFuncs();

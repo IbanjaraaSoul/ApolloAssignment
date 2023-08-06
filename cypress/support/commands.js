@@ -23,23 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-Cypress.Commands.add("isPieChartPercentageGreaterThanZero", (selector) => {
-  cy.get(selector).then(($el) => {
-    const value = parseFloat($el.text());
-    expect(value).to.be.greaterThan(0);
-  });
-});
-
-Cypress.Commands.add("sliderSelect", (selector, postion) => {
-  // Calculate the position to slide to (for example, 50%)
-  const desiredPosition = postion;
-  const sliderWidth = 300; // Assuming the width of the slider is 300 pixels
-  const positionInPixels = (desiredPosition / 100) * sliderWidth;
-
-  // Simulate dragging the slider handle to the desired position
-  cy.get(selector)
-    .trigger("mousedown", { which: 1 }) // Start dragging by triggering 'mousedown' event
-    .trigger("mousemove", { pageX: positionInPixels }) // Move the handle to the desired position
-    .trigger("mouseup"); // Stop dragging by triggering 'mouseup' event
-});
