@@ -4,7 +4,7 @@ import homePagepo from "../../pageobject/homePagePO";
 
 When("user navigates to the personal loan tab", () => {
   homePagepo.tab_personalLoan().click();
-  homePagepo.personalLoanAmount().should("be.visible");
+  homePagepo.label_personalLoan().should("be.visible");
 });
 
 When("set the personal loan slider with below data", (dataTable) => {
@@ -12,9 +12,9 @@ When("set the personal loan slider with below data", (dataTable) => {
     const amountPos = parseFloat(row.amountPageX.split(":")[1]);
     const ratePos = parseFloat(row.ratePageX.split(":")[1]);
     const tenurePos = parseFloat(row.tenurePageX.split(":")[1]);
-    utilFuncs.sliderSelect("#loanamountslider > span", amountPos);
-    utilFuncs.sliderSelect("#loaninterestslider > span", ratePos);
-    utilFuncs.sliderSelect("#loantermslider > span", tenurePos);
+    utilFuncs.sliderSelect(homePagepo.selector.slider_amount, amountPos);
+    utilFuncs.sliderSelect(homePagepo.selector.slider_rate, ratePos);
+    utilFuncs.sliderSelect(homePagepo.selector.slider_tenure, tenurePos);
   });
 });
 
@@ -22,18 +22,19 @@ When("change the month from the calendar widget", () => {
   cy.get("#startmonthyear")
     .click()
     .then(() => {
-      cy.get(".month").eq(5).click();
+      homePagepo.window_calendar(5).click();
     });
 });
 
 When("check the availability of bar chart", () => {
-  cy.get(".highcharts-plot-background").should("be.visible");
+  homePagepo.barChart().should("be.visible");
 });
 
 When("count the number of bars available", () => {
   // Use cy.get() to select all the rectangles representing the bars in the chart
-  cy.get("g.highcharts-series-group")
-    .find("g.highcharts-series-0 rect.highcharts-point")
+  homePagepo
+    .group_barChart()
+    .find(homePagepo.selector.individual_bars)
     .its("length")
     .then((count) => {
       // 'count' variable will contain the number of bars in the chart
@@ -43,14 +44,11 @@ When("count the number of bars available", () => {
 
 When("Read the values from any one bar tool tip", () => {
   // Use cy.get() to select the bars
-  cy.get(
-    "g.highcharts-series-group g.highcharts-series-0 rect.highcharts-point"
-  )
-    .first()
-    .trigger("mouseover", { force: true });
+  homePagepo.tooltip_bar(1).trigger("mouseover", { force: true });
 
   // Get the tooltip text and print it to the console
-  cy.get(".highcharts-tooltip tspan")
+  homePagepo
+    .label_tooltip()
     .invoke("text")
     .then((tooltipText) => {
       cy.log("Tooltip Text:", tooltipText);

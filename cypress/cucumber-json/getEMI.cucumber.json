@@ -22,7 +22,7 @@
             "name": "user navigates to the app URL",
             "result": {
               "status": "passed",
-              "duration": 1313000000
+              "duration": 2126000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "app loads successfully",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 92000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "verify the EMI with below data",
             "result": {
               "status": "passed",
-              "duration": 3531000000
+              "duration": 3477000000
             }
           },
           {
@@ -78,7 +78,7 @@
             "name": "verify availability of pie chart",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 87000000
             }
           },
           {
@@ -88,7 +88,7 @@
             "name": "verify that pie char percentage is greater than zero",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 63000000
             }
           }
         ]
@@ -108,7 +108,7 @@
             "name": "user navigates to the app URL",
             "result": {
               "status": "passed",
-              "duration": 2128000000
+              "duration": 1343000000
             }
           },
           {
@@ -118,7 +118,7 @@
             "name": "app loads successfully",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 92000000
             }
           },
           {
@@ -127,8 +127,8 @@
             "line": 17,
             "name": "user navigates to the personal loan tab",
             "result": {
-              "status": "failed",
-              "error_message": "TypeError: _homePagePO.default.tab_personalLoan is not a function\n    at Context.eval (cypress/e2e/getEMI/personalloan-step.js:6:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Context.thenFn (https://emicalculator.net/__cypress/runner/cypress_runner.js:145234:63)\n    at Context.then (https://emicalculator.net/__cypress/runner/cypress_runner.js:145483:21)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160816:19)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:159642:15)\nFrom previous event:\n    at CommandQueue.runCommand (https://emicalculator.net/__cypress/runner/cypress_runner.js:159608:8)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:159808:19)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:159829:16)\nFrom previous event:\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:159808:39)\nFrom previous event:\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:173478:77)\nFrom previous event:\n    at CommandQueue.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:173473:21)\n    at CommandQueue.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:159873:15)\n    at $Cy.runQueue (https://emicalculator.net/__cypress/runner/cypress_runner.js:160796:14)\n    at cy.<computed> [as then] (https://emicalculator.net/__cypress/runner/cypress_runner.js:160891:12)\n    at runnable.fn (https://emicalculator.net/__cypress/runner/cypress_runner.js:161070:19)\n    at callFn (https://emicalculator.net/__cypress/runner/cypress_runner.js:114440:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:114427:7)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:168059:30)\nFrom previous event:\n    at Object.onRunnableRun (https://emicalculator.net/__cypress/runner/cypress_runner.js:168042:53)\n    at $Cypress.action (https://emicalculator.net/__cypress/runner/cypress_runner.js:157260:28)\n    at Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:166040:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://emicalculator.net/__cypress/runner/cypress_runner.js:115099:10)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:115225:12)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:115008:14)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:115018:7)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:114920:14)\n    at Hook.<anonymous> (https://emicalculator.net/__cypress/runner/cypress_runner.js:114981:7)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:167953:24)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:167980:13)\nFrom previous event:\n    at onNext (https://emicalculator.net/__cypress/runner/cypress_runner.js:167977:59)\n    at done (https://emicalculator.net/__cypress/runner/cypress_runner.js:114380:5)\n    at callFn (https://emicalculator.net/__cypress/runner/cypress_runner.js:114463:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:114427:7)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:168059:30)\nFrom previous event:\n    at Object.onRunnableRun (https://emicalculator.net/__cypress/runner/cypress_runner.js:168042:53)\n    at $Cypress.action (https://emicalculator.net/__cypress/runner/cypress_runner.js:157260:28)\n    at Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:166040:13)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:114942:10)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:114986:5)\n    at timeslice (https://emicalculator.net/__cypress/runner/cypress_runner.js:108912:27)"
+              "status": "passed",
+              "duration": 423000000
             }
           },
           {
@@ -156,7 +156,8 @@
             "line": 18,
             "name": "set the personal loan slider with below data",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1655000000
             }
           },
           {
@@ -165,7 +166,8 @@
             "line": 21,
             "name": "change the month from the calendar widget",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 581000000
             }
           },
           {
@@ -174,7 +176,8 @@
             "line": 22,
             "name": "check the availability of bar chart",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 53000000
             }
           },
           {
@@ -183,7 +186,8 @@
             "line": 23,
             "name": "count the number of bars available",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 90000000
             }
           },
           {
@@ -192,7 +196,8 @@
             "line": 24,
             "name": "Read the values from any one bar tool tip",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 143000000
             }
           }
         ]

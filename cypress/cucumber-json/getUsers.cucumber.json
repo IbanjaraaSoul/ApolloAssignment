@@ -22,7 +22,7 @@
             "name": "the API is hit",
             "result": {
               "status": "passed",
-              "duration": 364000000
+              "duration": 225000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "verify that the response code is ok",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 8000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "verify that ID email first_name last_name from responses for all users matches with expected data",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 204000000
             }
           }
         ]
