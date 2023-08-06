@@ -1,0 +1,270 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "All somke test cases for provided url",
+    "line": 1,
+    "id": "all-somke-test-cases-for-provided-url",
+    "tags": [],
+    "uri": "test.feature",
+    "elements": [
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-all-the-labels-and-testboxes-on-the-directshifts-page-are-as-per-the-specification",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "verify that all the labels and testboxes on the DirectShifts page are as per the specification",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "duration": 215000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "direct shift job apply page loads",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should see all the appropriate labels",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user should see all the appropriate textboxes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-user-is-navigated-to-the-sign-in-page-on-click-on-sign-in-button",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify that user is navigated to the sign in page on click on sign in button",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user click on the sign in button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should be navigated to sign in page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-an-error-is-thrown-in-the-apply-form-when-user-tries-to-click-apply-now-button-without-entering-all-the-mandatory-fields",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify that an error is thrown in the Apply form when user tries to click Apply Now button without entering all the mandatory fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user clicks the apply now button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Error saying that please fill out this field shall be thrown",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-asterisk-is-present-against-all-the-mandatory-fields",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Verify that asterisk is present against all the mandatory fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "asterisk shall be present against all the mandatoryField",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-asterisk-is-not-present-against-the-non-mandatory-fields",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify that asterisk is not present against the non mandatory fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "asterisk shall not be present against all the non mandatoryField",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-user-can-use-upload-feature",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify that user can use upload feature",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "user clicks on the upload button and uploads a pdf file",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all-somke-test-cases-for-provided-url;verify-that-user-can-fill-all-the-details-and-apply-for-the-job",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify that user can fill all the details and apply for the Job",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://emicalculator.net/jobs/p/physicians-hospital-telehealth-openings-9057\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://emicalculator.net/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:147800:13)\nFrom previous event:\n    at visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147798:17)\n    at Context.visit (https://emicalculator.net/__cypress/runner/cypress_runner.js:147849:14)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160808:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/test/JobApply-steps.js:10:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "user Fills valid details in form",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "user clicks the apply now button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "user should be navigated to the apply confirmation page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

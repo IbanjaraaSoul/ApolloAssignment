@@ -1,0 +1,202 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Calculate EMI",
+    "line": 1,
+    "id": "calculate-emi",
+    "tags": [],
+    "uri": "getEMI.feature",
+    "elements": [
+      {
+        "id": "calculate-emi;validate-the-emi-pie-chart-in-home-loan-section",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate the EMI pie chart in Home loan Section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the app URL",
+            "result": {
+              "status": "passed",
+              "duration": 1313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "app loads successfully",
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "amount",
+                      "rate",
+                      "tenure"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "2500000",
+                      "10",
+                      "10"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "5000000",
+                      "7.5",
+                      "15"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "verify the EMI with below data",
+            "result": {
+              "status": "passed",
+              "duration": 3531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "verify availability of pie chart",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "verify that pie char percentage is greater than zero",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calculate-emi;validate-the-emi-bar-chart-in-the-personal-loan-section",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validate the EMI bar chart in the personal loan section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user navigates to the app URL",
+            "result": {
+              "status": "passed",
+              "duration": 2128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "app loads successfully",
+            "result": {
+              "status": "passed",
+              "duration": 74000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user navigates to the personal loan tab",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: _homePagePO.default.tab_personalLoan is not a function\n    at Context.eval (cypress/e2e/getEMI/personalloan-step.js:6:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Context.thenFn (https://emicalculator.net/__cypress/runner/cypress_runner.js:145234:63)\n    at Context.then (https://emicalculator.net/__cypress/runner/cypress_runner.js:145483:21)\n    at wrapped (https://emicalculator.net/__cypress/runner/cypress_runner.js:160816:19)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:159642:15)\nFrom previous event:\n    at CommandQueue.runCommand (https://emicalculator.net/__cypress/runner/cypress_runner.js:159608:8)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:159808:19)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:159829:16)\nFrom previous event:\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:159808:39)\nFrom previous event:\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:173478:77)\nFrom previous event:\n    at CommandQueue.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:173473:21)\n    at CommandQueue.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:159873:15)\n    at $Cy.runQueue (https://emicalculator.net/__cypress/runner/cypress_runner.js:160796:14)\n    at cy.<computed> [as then] (https://emicalculator.net/__cypress/runner/cypress_runner.js:160891:12)\n    at runnable.fn (https://emicalculator.net/__cypress/runner/cypress_runner.js:161070:19)\n    at callFn (https://emicalculator.net/__cypress/runner/cypress_runner.js:114440:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:114427:7)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:168059:30)\nFrom previous event:\n    at Object.onRunnableRun (https://emicalculator.net/__cypress/runner/cypress_runner.js:168042:53)\n    at $Cypress.action (https://emicalculator.net/__cypress/runner/cypress_runner.js:157260:28)\n    at Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:166040:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://emicalculator.net/__cypress/runner/cypress_runner.js:115099:10)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:115225:12)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:115008:14)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:115018:7)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:114920:14)\n    at Hook.<anonymous> (https://emicalculator.net/__cypress/runner/cypress_runner.js:114981:7)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:167953:24)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:167980:13)\nFrom previous event:\n    at onNext (https://emicalculator.net/__cypress/runner/cypress_runner.js:167977:59)\n    at done (https://emicalculator.net/__cypress/runner/cypress_runner.js:114380:5)\n    at callFn (https://emicalculator.net/__cypress/runner/cypress_runner.js:114463:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:114427:7)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:168059:30)\nFrom previous event:\n    at Object.onRunnableRun (https://emicalculator.net/__cypress/runner/cypress_runner.js:168042:53)\n    at $Cypress.action (https://emicalculator.net/__cypress/runner/cypress_runner.js:157260:28)\n    at Runnable.run (https://emicalculator.net/__cypress/runner/cypress_runner.js:166040:13)\n    at next (https://emicalculator.net/__cypress/runner/cypress_runner.js:114942:10)\n    at <unknown> (https://emicalculator.net/__cypress/runner/cypress_runner.js:114986:5)\n    at timeslice (https://emicalculator.net/__cypress/runner/cypress_runner.js:108912:27)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "amountPageX",
+                      "ratePageX",
+                      "tenurePageX"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1000000:85",
+                      "12:88",
+                      "5:200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 18,
+            "name": "set the personal loan slider with below data",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "change the month from the calendar widget",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "check the availability of bar chart",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "count the number of bars available",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Read the values from any one bar tool tip",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

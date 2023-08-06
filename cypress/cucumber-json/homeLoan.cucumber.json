@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Calculate EMI",
+    "line": 1,
+    "id": "calculate-emi",
+    "tags": [],
+    "uri": "homeloan.feature",
+    "elements": [
+      {
+        "id": "calculate-emi;verify-that-all-the-labels-and-testboxes-on-the-directshifts-page-are-as-per-the-specification",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify that all the labels and testboxes on the DirectShifts page are as per the specification",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the direct shift url",
+            "result": {
+              "status": "passed",
+              "duration": 3192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "test",
+            "result": {
+              "status": "passed",
+              "duration": 1690000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
