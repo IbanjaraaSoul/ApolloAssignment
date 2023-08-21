@@ -1,0 +1,207 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Calculate EMI",
+    "line": 1,
+    "id": "calculate-emi",
+    "tags": [],
+    "uri": "getEMI.feature",
+    "elements": [
+      {
+        "id": "calculate-emi;validate-the-emi-pie-chart-in-home-loan-section",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate the EMI pie chart in Home loan Section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the app URL",
+            "result": {
+              "status": "passed",
+              "duration": 2126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "app loads successfully",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "amount",
+                      "rate",
+                      "tenure"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "2500000",
+                      "10",
+                      "10"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "5000000",
+                      "7.5",
+                      "15"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "verify the EMI with below data",
+            "result": {
+              "status": "passed",
+              "duration": 3477000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "verify availability of pie chart",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "verify that pie char percentage is greater than zero",
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calculate-emi;validate-the-emi-bar-chart-in-the-personal-loan-section",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validate the EMI bar chart in the personal loan section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user navigates to the app URL",
+            "result": {
+              "status": "passed",
+              "duration": 1343000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "app loads successfully",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user navigates to the personal loan tab",
+            "result": {
+              "status": "passed",
+              "duration": 423000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "amountPageX",
+                      "ratePageX",
+                      "tenurePageX"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1000000:85",
+                      "12:88",
+                      "5:200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 18,
+            "name": "set the personal loan slider with below data",
+            "result": {
+              "status": "passed",
+              "duration": 1655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "change the month from the calendar widget",
+            "result": {
+              "status": "passed",
+              "duration": 581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "check the availability of bar chart",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "count the number of bars available",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Read the values from any one bar tool tip",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

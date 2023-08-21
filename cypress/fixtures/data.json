@@ -1,0 +1,9 @@
+{
+  "homePageHeader": "EMI Calculator for Home Loan, Car Loan & Personal Loan in India",
+  "articleHeader": "Featured Calculators & Articles",
+  "personalLoanAmount": "Personal Loan Amount",
+  "getUserURL": "https://reqres.in/api/users?page=2",
+  "header": {
+    "Content-Type": "application/json"
+  }
+}

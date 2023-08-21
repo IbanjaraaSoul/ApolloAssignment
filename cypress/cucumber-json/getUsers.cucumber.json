@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate API",
+    "line": 1,
+    "id": "validate-api",
+    "tags": [],
+    "uri": "getUsers.feature",
+    "elements": [
+      {
+        "id": "validate-api;validate-the-parameters-of-api",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate the parameters of API",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "the API is hit",
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "verify that the response code is ok",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "verify that ID email first_name last_name from responses for all users matches with expected data",
+            "result": {
+              "status": "passed",
+              "duration": 204000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
